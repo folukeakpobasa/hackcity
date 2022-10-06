@@ -8,11 +8,13 @@ def num_of_steps(num):
             floor_num = num // 2 
             
             num = floor_num - 1
-
+            steps = steps + 1
         else:
-            num /= 2
-            
-    
+            num = num / 2
+            steps = steps + 1
+    return steps
+
+print(num_of_steps(14))
    
         
             
